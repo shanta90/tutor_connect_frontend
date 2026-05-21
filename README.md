@@ -12,3 +12,21 @@ Welcome to TutorConnect, a premium web application connecting expert tutors with
 - **Core**: React 19, Vite, React Router 7
 - **Data Fetching**: React Query (TanStack)
 - **Styling**: Modern CSS variables & Glassmorphism effects
+
+## Installation & Running
+
+### 1. Install Dependencies
+```bash
+npm install
+```
+
+### 2. Run the Development Server
+```bash
+npm run dev
+```
+
+### 3. Build for Production
+```bash
+npm run build
+```
+
