@@ -72,7 +72,15 @@ const Tutors = () => {
             data?.data?.map(tutor => (
               <div key={tutor._id} className="glass-card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {tutor.tutorImage && (
-                  <img src={tutor.tutorImage} alt={tutor.tutorName} style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: 'var(--border-radius-sm)' }} />
+                  <img 
+                    src={tutor.tutorImage} 
+                    alt={tutor.tutorName} 
+                    onError={(e) => {
+                      e.target.onError = null;
+                      e.target.src = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60';
+                    }}
+                    style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: 'var(--border-radius-sm)' }} 
+                  />
                 )}
                 <div>
                   <h3 style={{ fontSize: '1.4rem', fontWeight: 600, color: 'var(--text-primary)' }}>{tutor.tutorName}</h3>
