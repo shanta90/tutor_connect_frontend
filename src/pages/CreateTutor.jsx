@@ -5,8 +5,10 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-const subjects = ['Mathematics', 'Physics', 'English', 'Computer Science', 'Biology', 'History', 'Other'];
-const teachingModes = ['Live', 'Offline', 'Hybrid'];
+const TUTOR_CONFIG = {
+  SUBJECTS: ['Mathematics', 'Physics', 'English', 'Computer Science', 'Biology', 'History', 'Other'],
+  TEACHING_MODES: ['Live', 'Offline', 'Hybrid']
+};
 
 const CreateTutor = () => {
   const { user } = useAuth();
@@ -98,7 +100,7 @@ const CreateTutor = () => {
               <label className="form-label">Subject</label>
               <select {...register('subject', { required: 'Subject is required' })} className="form-input" style={{ appearance: 'auto', backgroundColor: 'var(--bg-color)' }}>
                 <option value="">Select a subject</option>
-                {subjects.map(sub => <option key={sub} value={sub}>{sub}</option>)}
+                {TUTOR_CONFIG.SUBJECTS.map(sub => <option key={sub} value={sub}>{sub}</option>)}
               </select>
               {errors.subject && <span style={{ color: 'var(--danger-color)', fontSize: '0.85rem' }}>{errors.subject.message}</span>}
             </div>
@@ -107,8 +109,9 @@ const CreateTutor = () => {
               <label className="form-label">Teaching Mode</label>
               <select {...register('teachingMode', { required: 'Mode is required' })} className="form-input" style={{ appearance: 'auto', backgroundColor: 'var(--bg-color)' }}>
                 <option value="">Select teaching mode</option>
-                {teachingModes.map(mode => <option key={mode} value={mode}>{mode}</option>)}
+                {TUTOR_CONFIG.TEACHING_MODES.map(mode => <option key={mode} value={mode}>{mode}</option>)}
               </select>
+
               {errors.teachingMode && <span style={{ color: 'var(--danger-color)', fontSize: '0.85rem' }}>{errors.teachingMode.message}</span>}
             </div>
           </div>
