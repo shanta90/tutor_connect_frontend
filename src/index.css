@@ -400,3 +400,13 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--primary-accent);
+  color: #ffffff;
+}
+
