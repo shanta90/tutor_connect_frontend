@@ -30,3 +30,8 @@ npm run dev
 npm run build
 ```
 
+## Developer Notes
+- Ensure CORS configurations are properly aligned in backend and frontend.
+- Standard ESLint rules are enforced across components.
+
+
