@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 
+/**
+ * NotFound component renders a custom 404 page with a visual guide 
+ * and a link to redirect users back to the homepage.
+ */
 const NotFound = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '60vh', textAlign: 'center' }}>
