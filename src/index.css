@@ -445,5 +445,16 @@ html {
   width: 100%;
 }
 
+.footer a {
+  transition: color var(--transition-speed) ease, transform var(--transition-speed) ease;
+  display: inline-block;
+}
+
+.footer a:hover {
+  color: var(--secondary-accent);
+  transform: translateX(4px);
+}
+
+
 
 
