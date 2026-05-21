@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Color Palette */
+  /* ==========================================
+     GLOBAL THEME DESIGN SYSTEM VARIABLES
+     ========================================== */
+  
+  /* Primary Base Colors */
   --bg-color: #0d0e15;
   --surface-color: rgba(255, 255, 255, 0.03);
   --surface-border: rgba(255, 255, 255, 0.08);
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   
+  /* Accent Colors */
   --primary-accent: #6366f1; /* Indigo */
   --primary-accent-hover: #4f46e5;
   --secondary-accent: #14b8a6; /* Teal */
   
+  /* System State Colors */
   --danger-color: #ef4444;
   --success-color: #10b981;
   --warning-color: #f59e0b;
 
-  /* Typography */
+  /* Typography Configuration */
   --font-family: 'Outfit', sans-serif;
   
-  /* Shadows & Layout */
+  /* Shadows & Layout Specs */
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   --border-radius-lg: 16px;
   --border-radius-md: 10px;
