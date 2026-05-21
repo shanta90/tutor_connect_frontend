@@ -107,6 +107,7 @@ export const MainLayout = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Dynamically update document title based on location pathname for SEO optimization
     const path = location.pathname;
     let title = 'TutorConnect';
     if (path.includes('/tutors')) title = 'Tutors | TutorConnect';
