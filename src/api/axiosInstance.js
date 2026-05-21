@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api/v1',
+  baseURL: 'https://tutor-connect-backend.vercel.app/api/v1',
   withCredentials: true, // Crucial for cookie-based auth
 });
 
