@@ -1,10 +1,18 @@
+// React and Hook Imports
+import { useState, useEffect } from 'react';
 import { Link, Outlet, useNavigate, useLocation } from 'react-router-dom';
+
+// TanStack Query Imports
+import { useQueryClient } from '@tanstack/react-query';
+
+// Context & API Imports
 import { useAuth } from '../context/AuthContext';
 import * as authApi from '../api/auth.api';
-import { useQueryClient } from '@tanstack/react-query';
+
+// UI components & Toast notifications
 import { toast } from 'react-toastify';
-import { useState, useEffect } from 'react';
 import { Footer } from '../components/Footer';
+
 
 const Navbar = () => {
   const { user, logout } = useAuth();
