@@ -146,7 +146,7 @@ const Home = () => {
           </div>
           <div style={{ flex: '1 1 400px' }}>
             <img 
-              src="https://images.unsplash.com/photo-1571260899304-425dea4cf36e?w=800&q=80" 
+              src="/why_choose_us.png" 
               alt="Students learning" 
               style={{ width: '100%', borderRadius: 'var(--border-radius-lg)', boxShadow: 'var(--glass-shadow)' }}
             />
