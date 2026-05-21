@@ -1,16 +1,14 @@
-# React + Vite
+# TutorConnect Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to TutorConnect, a premium web application connecting expert tutors with students. TutorConnect simplifies scheduling, fees, and booking.
 
-Currently, two official plugins are available:
+## Key Features
+- **Interactive Tutor Profiles**: Search, details, dynamic booking.
+- **Glassmorphism UI**: Beautiful theme support with light/dark toggle.
+- **Robust Authentication**: Email/Password and Google OAuth integrations.
+- **My Bookings & My Tutors**: Seamless dashboard control for student booking tracking and tutor profile updates.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- **Core**: React 19, Vite, React Router 7
+- **Data Fetching**: React Query (TanStack)
+- **Styling**: Modern CSS variables & Glassmorphism effects
