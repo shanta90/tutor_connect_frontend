@@ -1,0 +1,18 @@
+import { Navigate, Outlet } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
+
+export const PrivateRoute = () => {
+  const { user, isLoading } = useAuth();
+  
+  if (isLoading) return <div>Loading...</div>; // Replace with a proper loader component
+  
+  return user ? <Outlet /> : <Navigate to="/login" />;
+};
+
+export const GuestRoute = () => {
+  const { user, isLoading } = useAuth();
+  
+  if (isLoading) return <div>Loading...</div>;
+  
+  return !user ? <Outlet /> : <Navigate to="/" />;
+};
